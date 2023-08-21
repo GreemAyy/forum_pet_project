@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-    import {_URL as U} from "../../tools/URL"
+    import {_URL } from "../../tools/URL"
     import { onMounted, reactive, watch } from 'vue';
     import {useStore} from 'vuex'
     import {getChannel} from '../../querys/channel.query'
     import Sub from './Sub.vue'
-    const _URL = U
     const props =defineProps(['id'])
     const store = useStore()
     const userID = store.state.id
